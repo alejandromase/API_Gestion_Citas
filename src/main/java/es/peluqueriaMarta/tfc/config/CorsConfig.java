@@ -27,9 +27,10 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Aplica la configuración a todas las rutas
-                        .allowedOrigins("*") // Permite solicitudes desde cualquier origen
+                        .allowedOrigins("https://peluqueria-marta.onrender.com") // Permite solicitudes desde cualquier origen con "*"
                         .allowedMethods("*") // Permite todos los métodos HTTP (GET, POST, PUT, DELETE, etc.)
                         .allowedHeaders("*") // Permite todas las cabeceras en las solicitudes
+                        .allowCredentials(true) //Permitir las credenciales
                         .maxAge(3600); // Establece el tiempo máximo de vida de la configuración en segundos (1 hora)
             }
         };

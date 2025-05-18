@@ -1,1 +1,31 @@
+target/                 # carpeta de compilación de Maven
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE/editor
+.idea/
+*.iml
+.vscode/
+*.sw?
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Archivos de cobertura de tests
+coverage/
+*.lcov
+
+# Otros artefactos
+*.tmp
+*.temp
+
+# Properties
+src/main/resources/application.properties
 /target/
